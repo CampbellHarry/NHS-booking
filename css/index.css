@@ -1,0 +1,142 @@
+body {
+    background-color: white;
+    margin: 0;
+    color: rgb(27, 27, 27);
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 10px 0;
+    background-color: #007AC2;
+    box-shadow: 0px 5px 40px gray;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 10vh;
+}
+
+footer {
+    box-shadow: 0px -6px 1px #007AC2;
+    padding: 20px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.account {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    float: right;
+    clear: right;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.account:hover {
+    text-decoration: none;
+}
+
+
+/* Container sect */
+.speachcont {
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    top: -100px;
+}
+.aboutc {
+    width: 100%;
+    height: 500px;
+    z-index: 0;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    top: -100px;
+    background-color: rgb(230, 230, 230);
+}
+
+.az{
+    height: 300px;
+    width: 400px;
+    background-color: transparent;
+    transform: translateY(60%);
+    left: 500px;
+    position: absolute; 
+    text-decoration: none;
+}
+
+.az:hover{
+    text-decoration: underline;
+}
+
+
+.ax{
+    height: 300px;
+    width: 400px;
+    background-color: transparent;
+    transform: translateY(60%);
+    left: 1000px;
+    position: absolute; 
+    text-decoration: none;
+}
+
+.ax:hover{
+    text-decoration: underline;
+}
+
+.speach {
+    background-color: #007AC2;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    color: white;
+    transform: translateY(-10%);
+    z-index: 4;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .acccont {
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    .speachcont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .az,
+    .ax {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .speech {
+        width: 80%;
+        left: 10%;
+        top: auto;
+        transform: none;
+    }
+}
