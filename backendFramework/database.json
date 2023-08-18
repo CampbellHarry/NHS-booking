@@ -1,0 +1,29 @@
+{
+    "triage_pool": [
+      {
+        "job_id": 1,
+        "name": "John Smith",
+        "hospital": "James Cook Hospital",
+        "severity": 1,
+        "emergency": false,
+        "symptoms": ["__none__"],
+        "ailments": ["__none__"],
+        "ems_info": false
+      },
+      {
+        "job_id": 2,
+        "name": "Jane Smith",
+        "hospital": "James Cook Hospital",
+        "severity": 3,
+        "emergency": true,
+        "symptoms": ["Confusion","Delusion","Psychopathy"],
+        "ailments": ["Concussion"],
+        "ems_info": {
+            "responding_unit": {
+                "station": "NEAS Newcastle",
+                "unit_num": 1
+            }
+        }
+      }
+    ]
+}

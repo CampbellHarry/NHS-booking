@@ -48,6 +48,7 @@ footer ul {
 
 .account:hover {
     text-decoration: none;
+    color: purple;
 }
 
 
@@ -68,7 +69,7 @@ footer ul {
     background-color: transparent;
     display: flex;
     position: relative;
-    top: -100px;
+    top: 10px;
     background-color: rgb(230, 230, 230);
 }
 
@@ -77,13 +78,14 @@ footer ul {
     width: 400px;
     background-color: transparent;
     transform: translateY(60%);
-    left: 500px;
+    left: 400px;
     position: absolute; 
     text-decoration: none;
 }
 
 .az:hover{
     text-decoration: underline;
+    color: purple;
 }
 
 
@@ -92,13 +94,14 @@ footer ul {
     width: 400px;
     background-color: transparent;
     transform: translateY(60%);
-    left: 1000px;
+    left: 1200px;
     position: absolute; 
     text-decoration: none;
 }
 
 .ax:hover{
     text-decoration: underline;
+    color: purple;
 }
 
 .speach {
@@ -116,6 +119,32 @@ footer ul {
 
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
+    .acccont {
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    .speachcont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .az,
+    .ax {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .speech {
+        width: 80%;
+        left: 10%;
+        top: auto;
+        transform: none;
+    }
+}
+/* Media queries for responsive design */
+@media screen and (max-width: 1280px) {
     .acccont {
         float: none;
         clear: both;
