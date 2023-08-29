@@ -1,4 +1,4 @@
-<!-- ========================  OPEN-SOURCE WOO YEAH WOO  ========================
+/* ========================  OPEN-SOURCE WOO YEAH WOO  ========================
 
 Purpose: Handle frontend of the NHS booking/triage knit
 
@@ -16,29 +16,65 @@ the frontend is made and maintained by https://github.com/campbellharry
 ██  ██ ██ ██   ██      ██        ██    ██   ██ ██ ██   ██ ██    ██ ██               ██    ██         ██ 
 ██   ████ ██   ██ ███████        ██    ██   ██ ██ ██   ██  ██████  ███████     ███████    ██    ███████ 
 ============================================================================
--->
+*/
 
+body {
+    margin: 0;
+    background-image: url(/img/download\ \(1\).jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHS Login Page</title>
-    <link rel="stylesheet" href="/css/login.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Welcome to the NHS Login Page</h1>
-        </div>
-        <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email" class="input-field" placeholder="Enter your email">
-            <label for="email">Password:</label>
-            <input type="password" id="password" class="input-field" placeholder="Enter your password">
-            <button class="submit-button">Login</button>
-        </form>
-    </div>
-</body>
-</html>
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: rgba(0, 122, 194, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: black solid
+}
+
+.header {
+    background-color: black;
+    color: #007AC2;
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    left: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+.input-field:invalid{
+    border: red solid 1px
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #007AC2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #005A8B;
+}
